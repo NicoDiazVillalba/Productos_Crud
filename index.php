@@ -33,10 +33,13 @@ $result = $conn->query($sql);
                 <td><?= $row['descripcion']; ?></td>
                 <td>
                     <a href="edit.php?id=<?= $row['id']; ?>" class="edit">Editar</a>
-                    <a href="delete.php?id=<?= $row['id']; ?>" class="delete" onclick="return confirm('¿Estás seguro?');">Eliminar</a>
+                    <a href="delete.php?id=<?= $row['id']; ?>" class="delete">Eliminar</a>
                 </td>
             </tr>
         <?php } ?>
     </table>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
